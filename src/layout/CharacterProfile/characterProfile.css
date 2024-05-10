@@ -1,0 +1,8 @@
+.profileCard {
+	max-width: 32vw;
+	position: relative;
+	overflow-x: hidden;
+}
+.img {
+	width: 32vw;
+}
