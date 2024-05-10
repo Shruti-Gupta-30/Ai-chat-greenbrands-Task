@@ -1,8 +1,58 @@
+.profileCards {
+}
 .profileCard {
-	max-width: 32vw;
-	position: relative;
+	max-width: var(--width-card);
 	overflow-x: hidden;
 }
-.img {
-	width: 32vw;
+figure {
+	position: relative;
+}
+figure img {
+	width: 100%;
+	height: auto;
+	aspect-ratio: auto 3/4;
+}
+
+figcaption {
+	width: var(--width-card);
+	position: absolute;
+	bottom: 0;
+	background: var(--white);
+	background: linear-gradient(
+		0deg,
+		rgba(29, 29, 29, 1) 0%,
+		rgba(37, 37, 37, 1) 18%,
+		rgba(51, 51, 51, 1) 34%,
+		rgba(102, 102, 102, 1) 60%,
+		rgba(146, 146, 146, 1) 80%,
+		rgba(233, 233, 233, 1) 100%
+	);
+	padding: 1rem 3rem;
+	opacity: 0.9;
+	text-align: left;
+}
+.profileName {
+	font-size: 1.2rem;
+	font-weight: 600;
+	line-height: 2;
+}
+
+/******************MEDIA QUERIES******************/
+/* 300-500, 600-900, 900-1100,>1200 */
+@media only screen and (max-width: 1080px) {
+}
+@media only screen and (max-width: 998px) {
+	.profileCard {
+		display: flex;
+		max-width: 100vw;
+		flex-direction: row;
+		align-items: center;
+	}
+}
+@media only screen and (max-width: 780px) {
+}
+@media only screen and (max-width: 590px) {
+	:root {
+		--width-card: 100vw;
+	}
 }

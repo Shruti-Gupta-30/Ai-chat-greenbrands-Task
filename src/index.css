@@ -24,9 +24,10 @@
 	--pink: #d62a5e;
 	--gray-1: #252525;
 	--gray-2: #929292;
+	--width-card: 30vw;
 }
 #root {
-	height: 100vh;
+	min-height: 100vh;
 	font-family: "Noto Sans", sans-serif;
 	background-color: var(--black);
 	color: var(--white);
@@ -42,8 +43,22 @@ li {
 	list-style: none;
 }
 /******************MEDIA QUERIES******************/
+/* 300-500, 600-900, 900-1100,>1200 */
 @media only screen and (max-width: 1080px) {
-	/* html {
-		font-size: 60%;
-	} */
+	:root {
+		--width-card: 35vw;
+	}
+}
+@media only screen and (max-width: 998px) {
+	:root {
+		--width-card: 38vw;
+		/* Make it horizontal */
+	}
+}
+@media only screen and (max-width: 780px) {
+}
+@media only screen and (max-width: 590px) {
+	:root {
+		--width-card: 100vw;
+	}
 }

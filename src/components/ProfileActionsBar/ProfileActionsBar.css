@@ -1,0 +1,26 @@
+.actionsBar {
+	margin: 1rem 1.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--gray-1);
+	padding: 1rem;
+	border-radius: 8px;
+}
+.actions {
+	padding: 0.5rem;
+}
+.actions .icon,
+.share .icon {
+	scale: 1.4;
+}
+.icon.gray {
+	color: var(--gray-2);
+}
+.actionInfo {
+	font-size: 1.2rem;
+	text-align: center;
+	padding-inline: 0.8rem;
+}
+.share {
+}
