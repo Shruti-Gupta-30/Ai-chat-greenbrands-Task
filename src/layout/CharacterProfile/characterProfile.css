@@ -1,7 +1,9 @@
 .profileCards {
+	background-color: var(--pink-2);
+	max-width: var(--width-card);
+	border-right: 0.35rem solid var(--pink);
 }
 .profileCard {
-	max-width: var(--width-card);
 	overflow-x: hidden;
 }
 figure {
@@ -42,9 +44,13 @@ figcaption {
 @media only screen and (max-width: 1080px) {
 }
 @media only screen and (max-width: 998px) {
+	.profileCards {
+		max-width: 100vw;
+		border-bottom: 0.35rem solid var(--pink);
+		border-right: none;
+	}
 	.profileCard {
 		display: flex;
-		max-width: 100vw;
 		flex-direction: row;
 		align-items: center;
 	}
@@ -52,7 +58,8 @@ figcaption {
 @media only screen and (max-width: 780px) {
 }
 @media only screen and (max-width: 590px) {
-	:root {
-		--width-card: 100vw;
+	.profileCard {
+		flex-direction: column;
+		justify-content: center;
 	}
 }
