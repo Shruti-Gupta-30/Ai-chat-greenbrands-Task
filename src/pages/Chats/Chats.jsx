@@ -5,7 +5,9 @@ import profilesData from "../../data/ProfileData/profileData.json";
 function Chats() {
 	return (
 		<div>
-			<CharacterProfile profilesData={profilesData} />
+			<aside>
+				<CharacterProfile profilesData={profilesData} />
+			</aside>
 		</div>
 	);
 }

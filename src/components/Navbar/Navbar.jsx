@@ -23,7 +23,7 @@ function Navbar() {
 		<>
 			<nav className="mainNav">
 				<div className="logo">
-					<NavLink to="/" className="logoText">
+					<NavLink to="/chats" className="logoText">
 						secret<span className="colored">desires</span>
 						<span className="subHeading">Open Beta</span>
 					</NavLink>
