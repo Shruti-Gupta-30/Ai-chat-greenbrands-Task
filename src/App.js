@@ -9,6 +9,7 @@ function App() {
 	return (
 		<>
 			<Navbar />
+			<Chats />
 
 			<Routes>
 				<Route path="/chats" element={<Chats />} />
