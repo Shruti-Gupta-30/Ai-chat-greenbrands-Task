@@ -7,7 +7,7 @@ function PromptInputBar() {
 			<div className="toggleSwitch">
 				<span className="switchName"> text</span>
 				<input type="checkbox" name="checkbox" id="toggle" />
-				<label for="toggle" className="switch"></label>
+				<label htmlFor="toggle" className="switch"></label>
 			</div>
 			<div className="inputBar">
 				<textarea

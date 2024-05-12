@@ -3,8 +3,51 @@
 	flex-direction: column;
 	overflow-x: hidden;
 }
-.messagesArea {
+.chatLog {
 	flex-grow: 1;
+	padding: 1.5rem 2rem;
+	font-size: 1.2rem;
+}
+.chatMessage {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+}
+.chatMessage.AI {
+	align-items: flex-start;
+}
+
+.avatar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-inline: 0.5rem;
+}
+.chatMessage.AI .avatar {
+	flex-direction: row-reverse;
+}
+.avatarName {
+	padding-inline: 0.5rem;
+	color: var(--gray-2);
+	font-size: 0.9rem;
+	font-weight: 500;
+}
+.avatarImage {
+	width: 2.5rem;
+	height: auto;
+	border-radius: 50%;
+}
+.message {
+	margin-block-start: 0.5rem;
+	padding: 0.8rem;
+	border-radius: 6px 0px 6px 6px;
+	background-color: var(--gray-1);
+}
+.chatMessage.AI .message {
+	margin-inline-start: 2rem;
+	background-color: var(--pink);
+	border-radius: 0px 6px 6px 6px;
 }
 .promptInputSection {
 	align-self: center;

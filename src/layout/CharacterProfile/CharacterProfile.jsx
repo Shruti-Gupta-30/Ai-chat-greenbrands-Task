@@ -4,7 +4,6 @@ import ProfileSettingsBar from "../../components/ProfileSettingsBar/ProfileSetti
 import "./characterProfile.css";
 
 function CharacterProfile({ profilesData }) {
-	console.log(profilesData);
 	return (
 		<div className="profileCards">
 			{profilesData &&

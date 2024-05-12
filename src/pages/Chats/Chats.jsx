@@ -10,7 +10,7 @@ function Chats() {
 				<CharacterProfile profilesData={profilesData} />
 			</aside>
 			<section className="chatSection">
-				<ChatSection />
+				<ChatSection profilesData={profilesData} />
 			</section>
 		</div>
 	);
