@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+![LaptopSS](https://github.com/Shruti-Gupta-30/Ai-chat-greenbrands-Task/assets/95923536/18d886ff-baf3-474b-b731-c54da2944950)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Chat Application
 
-## Available Scripts
+Live Demo: [https://secret-desires.vercel.app/](https://secret-desires.vercel.app/)
 
-In the project directory, you can run:
+## Setting up the app on your device
 
-### `npm start`
+**Download the ZIP version of the code** by clicking on the "Green Code" button on the top right side. 
+Extract the ZIP folder, and open it in your code editor, preferably VS Code.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Generating API Key
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Generate your API KEY, from the [OpenRouter AI](https://openrouter.ai/) website after creating an account on the same. 
+Save the API KEY generated with the name **REACT_APP_API_KEY** in a .env file at the root of the extracted folder.
 
-### `npm test`
+## Running the app on your device
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+After opening the file in a code editor, **open the terminal**(windows or code editor) and run `npm install`
 
-### `npm run build`
+After that start the dev server `npm start`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![TabletSS1](https://github.com/Shruti-Gupta-30/Ai-chat-greenbrands-Task/assets/95923536/50bbcc16-e1c5-455e-84c7-cabcfac8139c)
+![TabletSS2](https://github.com/Shruti-Gupta-30/Ai-chat-greenbrands-Task/assets/95923536/189f0798-f994-47b1-a480-bfeab33ebeca)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![MobileSS1](https://github.com/Shruti-Gupta-30/Ai-chat-greenbrands-Task/assets/95923536/b88b6b06-26cd-434b-8094-f2e6482d9a7f)
+![MobileSS2](https://github.com/Shruti-Gupta-30/Ai-chat-greenbrands-Task/assets/95923536/40bc511e-466e-42e3-b901-a0b4124f32a1)
+![MobileSS3](https://github.com/Shruti-Gupta-30/Ai-chat-greenbrands-Task/assets/95923536/5118c561-a1a9-4270-9a38-0043981c63a6)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
