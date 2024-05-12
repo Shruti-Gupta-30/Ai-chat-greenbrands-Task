@@ -1,22 +1,28 @@
-.chatsArea {
-	display: flex;
-}
-/* .characterProfileArea {
-	max-width: var(--width-card);
-} */
 .chatSection {
+	display: flex;
+	flex-direction: column;
+	overflow-x: hidden;
+}
+.messagesArea {
 	flex-grow: 1;
+}
+.promptInputBar {
+	justify-content: flex-end;
+	align-self: center;
 }
 /******************MEDIA QUERIES******************/
 /* 300-500, 600-900, 900-1100,>1200 */
 @media only screen and (max-width: 1080px) {
 }
 @media only screen and (max-width: 998px) {
-	.chatsArea {
-		flex-direction: column;
+	.chatSection {
+		height: 50vh;
 	}
 }
 @media only screen and (max-width: 780px) {
 }
 @media only screen and (max-width: 590px) {
+	.chatSection {
+		height: 80vh;
+	}
 }

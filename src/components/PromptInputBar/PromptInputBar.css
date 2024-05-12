@@ -1,0 +1,87 @@
+.promptInputBar {
+	display: grid;
+	grid-template-rows: 2;
+	gap: 0.5rem;
+	align-items: center;
+	padding-block-end: 1rem;
+}
+
+.toggleSwitch {
+	grid-row: 1;
+	justify-self: end;
+	align-self: center;
+	display: flex;
+}
+/* This text can be changed when the button is toggled */
+.toggleSwitch .switchName {
+	padding-inline-end: 0.5rem;
+	font-size: 1.2rem;
+	color: var(--pink);
+	align-self: center;
+}
+.switch {
+	position: relative;
+	width: 3.8rem;
+	height: 1.8rem;
+	background-color: var(--gray-1);
+	border-radius: 12px;
+	transition: all 0.3s linear;
+}
+.switch::after {
+	content: "";
+	position: absolute;
+	top: 0.1rem;
+	left: 0.1rem;
+	width: 1.6rem;
+	height: 1.6rem;
+	border-radius: 50%;
+	background-color: var(--pink);
+	transition: all 0.3s linear;
+}
+input[type="checkbox"]:checked + .switch:after {
+	translate: 1.8rem 0;
+	background-color: var(--gray-1);
+}
+input[type="checkbox"]:checked + .switch {
+	background-color: var(--pink);
+}
+input[type="checkbox"] {
+	display: none;
+}
+.promptInputArea {
+	grid-row: 2;
+	background-color: var(--black);
+	color: var(--gray-2);
+	border: 2px solid var(--red);
+	border-radius: 6px;
+	width: 55rem;
+	font-family: "Noto Sans", sans-serif;
+	padding: 1rem;
+}
+.sendButton {
+	cursor: pointer;
+	grid-row: 2;
+	margin-inline-start: 1rem;
+	background-color: #4c4c4c;
+	padding: 1rem;
+	border-radius: 50%;
+}
+.icon {
+	scale: 2;
+}
+/******************MEDIA QUERIES******************/
+/* 300-500, 600-900, 900-1100,>1200 */
+@media only screen and (max-width: 1080px) {
+}
+@media only screen and (max-width: 998px) {
+}
+@media only screen and (max-width: 780px) {
+	.promptInputArea {
+		width: 50rem;
+	}
+}
+@media only screen and (max-width: 590px) {
+	.promptInputArea {
+		width: 28rem;
+	}
+}
