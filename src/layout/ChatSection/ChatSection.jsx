@@ -2,13 +2,12 @@ import PromptInputBar from "../../components/PromptInputBar/PromptInputBar";
 import MyAvatarPhoto from "../../assets/images/MyAvatarPhoto.jpg";
 import "./ChatSection.css";
 import { useState } from "react";
+import BASE_URL from "../../config/config";
 
 const API_KEY =
 	"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";
-
 function ChatSection({ profilesData }) {
 	const profileData = profilesData[0];
-	console.log(profileData);
 
 	const [messages, setMessages] = useState([
 		{
@@ -33,9 +32,6 @@ function ChatSection({ profilesData }) {
 	};
 
 	async function processMessageToAI(chatMessages) {
-		console.log("CHATMESSAGES", chatMessages);
-		//chatMessages {sender:"user" or"AI", message:"Content here"}
-		//apiMessages{ role:"user" or "Character", content:"Message COntent"}
 		let apiMessages = chatMessages.map((messageObject) => {
 			let role = "";
 			if (messageObject.sender === "AI") {
@@ -45,7 +41,6 @@ function ChatSection({ profilesData }) {
 			}
 			return { role: role, content: messageObject.message };
 		});
-		console.log("APIMESSAGES", apiMessages);
 
 		// //role:"user",role:"AI",role:"system"
 		const systemMessage = {
@@ -68,7 +63,6 @@ function ChatSection({ profilesData }) {
 				return data.json();
 			})
 			.then((data) => {
-				console.log("DATA", data.choices[0].message.content);
 				setMessages([
 					...chatMessages,
 					{
@@ -76,20 +70,16 @@ function ChatSection({ profilesData }) {
 						sender: "AI",
 					},
 				]);
-
-				console.log("NEWMESSAGES", messages);
 			});
 		// });
 	}
-	console.log("NEWMESSAGES", messages);
 
 	return (
 		<div className="chatSection">
 			<div className="chatLog">
 				{messages.map((message, i) => {
-					console.log(message);
 					return message.sender === "AI" ? (
-						<div className="chatMessage AI">
+						<div className="chatMessage AI" key={i}>
 							<div className="avatar">
 								<span className="avatarName">
 									{profileData.name.split(" ")[0]}
@@ -103,7 +93,7 @@ function ChatSection({ profilesData }) {
 							<div className="message">{message.message}</div>
 						</div>
 					) : (
-						<div className="chatMessage">
+						<div className="chatMessage" key={i}>
 							<div className="avatar">
 								<span className="avatarName">Cutie</span>
 								<img src={MyAvatarPhoto} alt="Avatar" className="avatarImage" />

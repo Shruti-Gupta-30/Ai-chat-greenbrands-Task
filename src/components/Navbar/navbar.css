@@ -33,8 +33,6 @@
 	letter-spacing: initial;
 }
 
-.menuLinks {
-}
 .menuLinks ul {
 	display: flex;
 	justify-content: center;
@@ -55,12 +53,6 @@
 .menuLinks ul li a.active .icon {
 	fill: var(--pink);
 }
-/* .menuLinks ul li a.active::after {
-	content: "";
-	background-color: var(--pink);
-	width: inherit;
-	height: 0.2rem;
-} */
 .menuLinks ul li .createCharacter.active {
 	color: var(--white);
 }
@@ -92,11 +84,8 @@
 	scale: 2;
 	color: var(--pink);
 }
-@media only screen and (max-width: 1080px) {
-	/* .menuLinks ul li {
-		padding-inline-start: 3rem;
-	} */
-}
+
+/******************MEDIA QUERIES******************/
 @media only screen and (max-width: 998px) {
 	.mainNav {
 	}

@@ -1,4 +1,3 @@
-import "./style.module.css";
 import { Routes, Route } from "react-router-dom";
 import Chats from "./pages/Chats/Chats.jsx";
 import Characters from "./pages/Characters/Characters";

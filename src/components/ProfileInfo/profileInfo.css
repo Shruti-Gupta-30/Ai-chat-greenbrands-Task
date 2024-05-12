@@ -7,8 +7,7 @@
 	grid-template-columns: 1fr 2fr;
 	gap: 5rem;
 }
-.whoIam {
-}
+
 .sectionHeading {
 	font-size: 1.4rem;
 	display: flex;
@@ -24,8 +23,7 @@
 	font-weight: 400;
 	font-size: 1.1rem;
 }
-.about {
-}
+
 .about .sectionHeading .icon {
 	scale: 1.2;
 }

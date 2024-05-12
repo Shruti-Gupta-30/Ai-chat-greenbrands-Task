@@ -53,13 +53,3 @@
 .promptInputSection {
 	align-self: center;
 }
-/******************MEDIA QUERIES******************/
-/* 300-500, 600-900, 900-1100,>1200 */
-@media only screen and (max-width: 1080px) {
-}
-@media only screen and (max-width: 998px) {
-}
-@media only screen and (max-width: 780px) {
-}
-@media only screen and (max-width: 590px) {
-}
