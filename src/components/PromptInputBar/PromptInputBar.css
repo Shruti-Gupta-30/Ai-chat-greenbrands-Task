@@ -57,11 +57,15 @@ input[type="checkbox"] {
 .promptInputArea {
 	background-color: var(--black);
 	color: var(--gray-2);
-	border: 2px solid var(--red);
+	border: 2px solid var(--pink);
 	border-radius: 6px;
 	width: calc(90vw - var(--width-card));
 	font-family: "Noto Sans", sans-serif;
 	padding: 1rem;
+}
+.promptInputArea:focus {
+	border-color: var(--red);
+	outline: none;
 }
 .sendButton {
 	cursor: pointer;

@@ -2,7 +2,6 @@ import PromptInputBar from "../../components/PromptInputBar/PromptInputBar";
 import MyAvatarPhoto from "../../assets/images/MyAvatarPhoto.jpg";
 import "./ChatSection.css";
 import { useState } from "react";
-import { ThreeDots } from "react-loader-spinner";
 
 const API_KEY =
 	"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";
@@ -11,7 +10,6 @@ function ChatSection({ profilesData }) {
 	const profileData = profilesData[0];
 	console.log(profileData);
 
-	const [typing, setTyping] = useState(false);
 	const [messages, setMessages] = useState([
 		{
 			message: "Hello, I am Jessica",
@@ -29,8 +27,6 @@ function ChatSection({ profilesData }) {
 
 		//Updating the message state
 		setMessages(newMessages);
-
-		setTyping(true);
 
 		//processing message to AI
 		await processMessageToAI(newMessages);
@@ -56,10 +52,6 @@ function ChatSection({ profilesData }) {
 			role: "system",
 			content: `Imagine you're a ${profilesData[0].about}.`,
 		};
-		const apiRequestBody = {
-			model: "gryphe/mythomist-7b:free",
-			messages: [...apiMessages],
-		};
 
 		await fetch("https://openrouter.ai/api/v1/chat/completions", {
 			method: "POST",
@@ -78,17 +70,18 @@ function ChatSection({ profilesData }) {
 			.then((data) => {
 				console.log("DATA", data.choices[0].message.content);
 				setMessages([
-					...apiMessages,
+					...chatMessages,
 					{
 						message: data.choices[0].message.content,
 						sender: "AI",
 					},
 				]);
-				setTyping(false);
+
 				console.log("NEWMESSAGES", messages);
 			});
 		// });
 	}
+	console.log("NEWMESSAGES", messages);
 
 	return (
 		<div className="chatSection">

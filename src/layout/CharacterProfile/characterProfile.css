@@ -46,6 +46,7 @@ figcaption {
 @media only screen and (max-width: 998px) {
 	.profileCards {
 		max-width: 100vw;
+		height: auto;
 		border-bottom: 0.35rem solid var(--pink);
 		border-right: none;
 	}

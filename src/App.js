@@ -2,7 +2,7 @@ import "./style.module.css";
 import { Routes, Route } from "react-router-dom";
 import Chats from "./pages/Chats/Chats.jsx";
 import Characters from "./pages/Characters/Characters";
-import GenerateImages from "./pages/GenerateImages/GenerateImages";
+import GenerateImages from "./pages/GenerateImages/GenerateImages.jsx";
 import CreateCharacter from "./pages/CreateCharacter/CreateCharacter";
 import Navbar from "./components/Navbar/Navbar";
 
