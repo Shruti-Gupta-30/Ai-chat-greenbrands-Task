@@ -2,10 +2,8 @@ import PromptInputBar from "../../components/PromptInputBar/PromptInputBar";
 import MyAvatarPhoto from "../../assets/images/MyAvatarPhoto.jpg";
 import "./ChatSection.css";
 import { useState } from "react";
-import BASE_URL from "../../config/config";
+import { BASE_URL } from "../../config/config";
 
-const API_KEY =
-	"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";
 function ChatSection({ profilesData }) {
 	const profileData = profilesData[0];
 
@@ -48,10 +46,10 @@ function ChatSection({ profilesData }) {
 			content: `Imagine you're a ${profilesData[0].about}.`,
 		};
 
-		await fetch("https://openrouter.ai/api/v1/chat/completions", {
+		await fetch(BASE_URL, {
 			method: "POST",
 			headers: {
-				Authorization: `Bearer ${API_KEY}`,
+				Authorization: `Bearer ${process.env.REACT_APP_API_KEY}`,
 				"Content-Type": "application/json",
 			},
 			body: JSON.stringify({
