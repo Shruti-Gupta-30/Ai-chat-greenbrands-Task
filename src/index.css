@@ -30,10 +30,9 @@
 }
 #root {
 	min-height: 100vh;
-
 	font-family: "Noto Sans", sans-serif;
-	background-color: var(--black);
 	color: var(--white);
+	background-color: var(--black);
 }
 html {
 	font-size: 62.5%;

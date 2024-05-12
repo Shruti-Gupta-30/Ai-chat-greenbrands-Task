@@ -9,14 +9,16 @@ function PromptInputBar() {
 				<input type="checkbox" name="checkbox" id="toggle" />
 				<label for="toggle" className="switch"></label>
 			</div>
-			<textarea
-				rows={1}
-				className="promptInputArea"
-				placeholder="Type a message here..."
-			></textarea>
-			<span className="sendButton">
-				<PaperPlaneTilt className="icon" weight="fill" />
-			</span>
+			<div className="inputBar">
+				<textarea
+					rows={1}
+					className="promptInputArea"
+					placeholder="Type a message here..."
+				></textarea>
+				<span className="sendButton">
+					<PaperPlaneTilt className="icon" weight="fill" />
+				</span>
+			</div>
 		</div>
 	);
 }

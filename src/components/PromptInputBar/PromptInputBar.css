@@ -1,15 +1,15 @@
 .promptInputBar {
-	display: grid;
-	grid-template-rows: 2;
-	gap: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	align-items: center;
 	padding-block-end: 1rem;
 }
 
 .toggleSwitch {
-	grid-row: 1;
-	justify-self: end;
-	align-self: center;
+	padding-block-end: 0.5rem;
+	padding-inline-end: 6%;
+	align-self: flex-end;
 	display: flex;
 }
 /* This text can be changed when the button is toggled */
@@ -48,19 +48,23 @@ input[type="checkbox"]:checked + .switch {
 input[type="checkbox"] {
 	display: none;
 }
+
+.inputBar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .promptInputArea {
-	grid-row: 2;
 	background-color: var(--black);
 	color: var(--gray-2);
 	border: 2px solid var(--red);
 	border-radius: 6px;
-	width: 55rem;
+	width: calc(90vw - var(--width-card));
 	font-family: "Noto Sans", sans-serif;
 	padding: 1rem;
 }
 .sendButton {
 	cursor: pointer;
-	grid-row: 2;
 	margin-inline-start: 1rem;
 	background-color: #4c4c4c;
 	padding: 1rem;
@@ -74,14 +78,11 @@ input[type="checkbox"] {
 @media only screen and (max-width: 1080px) {
 }
 @media only screen and (max-width: 998px) {
+	.promptInputArea {
+		width: 85vw;
+	}
 }
 @media only screen and (max-width: 780px) {
-	.promptInputArea {
-		width: 50rem;
-	}
 }
 @media only screen and (max-width: 590px) {
-	.promptInputArea {
-		width: 28rem;
-	}
 }

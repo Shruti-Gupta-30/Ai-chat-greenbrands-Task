@@ -5,7 +5,7 @@ function ChatSection() {
 	return (
 		<div className="chatSection">
 			<div className="messagesArea"> This is Chats Section</div>
-			<div className="promptInputBar">
+			<div className="promptInputSection">
 				<PromptInputBar />
 			</div>
 		</div>
