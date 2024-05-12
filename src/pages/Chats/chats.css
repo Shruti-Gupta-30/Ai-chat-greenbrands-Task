@@ -16,7 +16,7 @@
 		flex-direction: column;
 	}
 	.chatSection {
-		height: 80vh;
+		height: 85vh;
 	}
 }
 @media only screen and (max-width: 780px) {

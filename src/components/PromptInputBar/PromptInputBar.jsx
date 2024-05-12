@@ -1,7 +1,15 @@
+import { useState } from "react";
 import "./PromptInputBar.css";
 import { PaperPlaneTilt } from "@phosphor-icons/react";
 
-function PromptInputBar() {
+function PromptInputBar({ handleSubmit }) {
+	const [prompt, setPrompt] = useState("");
+
+	const handleChange = (e) => {
+		e.preventDefault();
+		setPrompt(e.target.value);
+	};
+
 	return (
 		<div className="promptInputBar">
 			<div className="toggleSwitch">
@@ -14,8 +22,9 @@ function PromptInputBar() {
 					rows={1}
 					className="promptInputArea"
 					placeholder="Type a message here..."
+					onChange={handleChange}
 				></textarea>
-				<span className="sendButton">
+				<span className="sendButton" onClick={() => handleSubmit(prompt)}>
 					<PaperPlaneTilt className="icon" weight="fill" />
 				</span>
 			</div>
