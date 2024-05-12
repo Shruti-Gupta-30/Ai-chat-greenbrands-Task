@@ -22,11 +22,18 @@ After that start the dev server `npm start`
 
 
 
+### Tablet View
 ![TabletSS1](https://github.com/Shruti-Gupta-30/Ai-chat-greenbrands-Task/assets/95923536/50bbcc16-e1c5-455e-84c7-cabcfac8139c)
+
+
 ![TabletSS2](https://github.com/Shruti-Gupta-30/Ai-chat-greenbrands-Task/assets/95923536/189f0798-f994-47b1-a480-bfeab33ebeca)
 
 
+
+### Mobile View
 ![MobileSS1](https://github.com/Shruti-Gupta-30/Ai-chat-greenbrands-Task/assets/95923536/b88b6b06-26cd-434b-8094-f2e6482d9a7f)
-![MobileSS2](https://github.com/Shruti-Gupta-30/Ai-chat-greenbrands-Task/assets/95923536/40bc511e-466e-42e3-b901-a0b4124f32a1)
 ![MobileSS3](https://github.com/Shruti-Gupta-30/Ai-chat-greenbrands-Task/assets/95923536/5118c561-a1a9-4270-9a38-0043981c63a6)
+
+
+![MobileSS2](https://github.com/Shruti-Gupta-30/Ai-chat-greenbrands-Task/assets/95923536/40bc511e-466e-42e3-b901-a0b4124f32a1)
 
