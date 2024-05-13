@@ -6,7 +6,7 @@ Live Demo: [https://secret-desires.vercel.app/](https://secret-desires.vercel.ap
 
 ## Setting up the app on your device
 
-**Download the ZIP version of the code** by clicking on the "Green Code" button on the top right side. 
+**Download the ZIP version of the code** by clicking on the Green-"Code" button on the top right side. 
 Extract the ZIP folder, and open it in your code editor, preferably VS Code.
 
 ## Generating API Key
