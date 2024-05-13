@@ -12,7 +12,7 @@ Extract the ZIP folder, and open it in your code editor, preferably VS Code.
 ## Generating API Key
 
 Generate your API KEY, from the [OpenRouter AI](https://openrouter.ai/) website after creating an account on the same. 
-Save the API KEY generated with the name **REACT_APP_API_KEY** in a .env file at the root of the extracted folder.
+Save the API KEY generated with the name `REACT_APP_API_KEY` in a .env file at the root of the extracted folder.
 
 ## Running the app on your device
 
