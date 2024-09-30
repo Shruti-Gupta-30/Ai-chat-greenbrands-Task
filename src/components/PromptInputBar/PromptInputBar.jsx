@@ -1,21 +1,22 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import "./PromptInputBar.css";
 import { PaperPlaneTilt } from "@phosphor-icons/react";
 
 function PromptInputBar({ handleSubmit }) {
-	const [prompt, setPrompt] = useState("");
-	const resetPrompt = useRef("");
+	const [chatLog, setChatLog] = useState([]);
+	const [input, setInput] = useState("");
 
-	const handleChange = (e) => {
+	async function resetTextArea(e) {
 		e.preventDefault();
-		setPrompt(e.target.value);
-	};
-
-	//Using useRef hooko to clear the input field on form submission while retaining the prompt value to pass on to another component
-	const resetTextArea = (e) => {
-		e.preventDefault();
-		resetPrompt.current.value = "";
-	};
+		setChatLog([
+			...chatLog,
+			{
+				message: `${input}`,
+				sender: "user",
+			},
+		]);
+		setInput("");
+	}
 
 	return (
 		<div className="promptInputBar">
@@ -25,16 +26,16 @@ function PromptInputBar({ handleSubmit }) {
 				<label htmlFor="toggle" className="switch"></label>
 			</div>
 			<div className="inputBar">
-				<form onSubmit={resetTextArea}>
+				<form onSubmit={(e) => resetTextArea(e)}>
 					<input
-						type="text"
-						ref={resetPrompt}
+						// ref={resetPrompt}
+						value={input}
 						rows={1}
 						className="promptInputArea"
 						placeholder="Type a message here..."
-						onChange={handleChange}
+						onChange={(e) => setInput(e.target.value)}
 					/>
-					<button className="sendButton" onClick={() => handleSubmit(prompt)}>
+					<button className="sendButton" onClick={() => handleSubmit(chatLog)}>
 						<PaperPlaneTilt className="icon" weight="fill" />
 					</button>
 				</form>

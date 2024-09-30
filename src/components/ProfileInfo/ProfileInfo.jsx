@@ -2,6 +2,7 @@ import "./profileInfo.css";
 import { NotePencil } from "@phosphor-icons/react";
 
 function ProfileInfo({ profileData }) {
+	// Getting character Info from json file. It can be extended to have more characters
 	return (
 		<div className="profileInfoCard">
 			<div className="whoIam">

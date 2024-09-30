@@ -31,7 +31,6 @@ function CharacterProfile({ profilesData }) {
 							</div>
 							<div className="cardInfo">
 								<ProfileActionsBar />
-
 								<ProfileInfo profileData={profileData} />
 							</div>
 						</div>
